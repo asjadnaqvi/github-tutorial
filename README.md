@@ -1,1 +1,1 @@
-# Stata-to-Github Tutorial 
+# Stata-to-GitHub Tutorial 
