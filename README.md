@@ -1,12 +1,18 @@
 # Stata-to-GitHub Tutorial 
 
-Here I can some more descriptions and text
+The folder was auto-synchronized from Stata. For first time use with the readme.md use the following commands in Stata:
 
-Also some sub-headings:
+> ! echo # github-tutorial >> README.md
+> ! git init
+> ! git add README.md
+> ! git commit -m "my first github upload comment"
+> ! git remote add origin https://github.com/asjadnaqvi/github-tutorial.git
+> ! git push -u origin main
 
-## some section here
 
-with some 
-* bullet
-* points
+To update contents in the folder once new files are generated:
 
+> ! git remote add origin 'https://github.com/asjadnaqvi/github-tutorial.git'
+> ! git add --all
+> ! git commit -m 'minor fixes'
+> ! git push 
