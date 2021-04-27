@@ -101,8 +101,11 @@ graph export ./figures/region_deaths.png, replace wid(1000)
 xtline new_cases_ma7, overlay xtitle("") ytitle("New cases (7 day M-A)") 
 graph export ./figures/region_cases.png, replace wid(1000)
 
+twoway (scatter new_deaths_ma7 new_cases_ma7, mc(%10) ms(vsmall)), xtitle("New deaths (7 day M-A)") ytitle("New cases (7 day M-A)") 
+graph export ./figures/scatter_cases_deaths.png, replace wid(1000)
 
-
+twoway (scatter new_cases_ma7 new_deaths_ma7, mc(pink%10) ms(vsmall)), xtitle("New cases (7 day M-A)") ytitle("New deaths (7 day M-A)") 
+graph export ./figures/scatter_deaths_cases.png, replace wid(1000)
 
 **** For the first time to set up the README.md
 
@@ -111,7 +114,7 @@ graph export ./figures/region_cases.png, replace wid(1000)
 ! echo # github-tutorial >> README.md
 ! git init
 ! git add README.md
-! git commit -m "my first github upload comment"
+! git commit -m 'my first github upload comment'
 ! git remote add origin https://github.com/asjadnaqvi/github-tutorial.git
 ! git push -u origin main
 
@@ -120,16 +123,35 @@ graph export ./figures/region_cases.png, replace wid(1000)
 
 **** To commit to an existing directory:
 
+
+*** create a batch file to excute all the git commands in one instance (a Stata windows problem)
+
+file close _all
+file open git using mygit.bat, write replace
+	file write git "git remote add origin " `"""' "https://github.com/asjadnaqvi/github-tutorial.git" `"""' _n
+	file write git "git add --all" _n
+	file write git "git commit -m "
+	file write git `"""' "minor fixes" `"""' _n
+	file write git "git push" _n
+file close git
+
+
+! mygit.bat
+
+
+
+
+/* // some commands below
 ! git remote add origin 'https://github.com/asjadnaqvi/github-tutorial.git'
 
-*! git pull origin master
-*! git checkout README.md
-
+*! git status
 ! git add --all
-! git commit -m 'first folder sync'
-! git push 
+! git commit -m 'minor fixes'
+! git push
 
-
+! git add README.md
+! git commit -m 'Update readme'
+! git push
 
 
 
