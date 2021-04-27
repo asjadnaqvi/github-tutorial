@@ -1,5 +1,5 @@
 # Stata-to-GitHub Tutorial 
 
-The folder was auto-synchronized from Stata.
+This folder was auto-synchronized from Stata.
 
 
