@@ -7,6 +7,7 @@ This folder was auto-synchronized from Stata.
 
 Once you create the readme. You can use any text editor to update it. 
 
-This is updated using [Notepad++](https://notepad-plus-plus.org/downloads/)
+This file is updated using [Notepad++](https://notepad-plus-plus.org/downloads/)
 
+# github-tutorial 
 # github-tutorial 

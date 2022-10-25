@@ -71,7 +71,9 @@ file close git
 ! git push
 
 
-
+! git rm <filename>
+! git commit -m 'files removed'
+! git push
 
 
 
