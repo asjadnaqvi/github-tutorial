@@ -48,7 +48,7 @@ file open git using mygit.bat, write replace
 	file write git "git remote add origin " `"""' "https://github.com/asjadnaqvi/github-tutorial.git" `"""' _n
 	file write git "git add --all" _n
 	file write git "git commit -m "
-	file write git `"""' "minor fixes" `"""' _n
+	file write git `"""' "file updates" `"""' _n
 	file write git "git push" _n
 file close git
 
