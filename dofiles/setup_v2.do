@@ -23,6 +23,9 @@ graph export ./figures/figure2.png, replace wid(1000)
 scatter price weight
 graph export ./figures/figure3.png, replace wid(1000)
 
+scatter length mpg
+graph export ./figures/figure4.png, replace wid(1000)
+
 **** For the first time to set up the README.md
 
 /*
