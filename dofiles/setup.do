@@ -1,6 +1,6 @@
 clear
 
-cap cd "D:/Programs/Dropbox/Dropbox/STATA - MEDIUM/graphs/github"
+cap cd "D:/Dropbox/STATA - MEDIUM/graphs/github"
 
 
 
@@ -9,7 +9,7 @@ cap cd "D:/Programs/Dropbox/Dropbox/STATA - MEDIUM/graphs/github"
 ***  COVID 19 data   ***
 ************************
 
-insheet using "https://covid.ourworldindata.org/data/owid-covid-data.csv", clear
+import delim using "https://covid.ourworldindata.org/data/owid-covid-data.csv", clear
 
 gen date2 = date(date, "YMD")
 format date2 %tdDD-Mon-yy
